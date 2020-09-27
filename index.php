@@ -34,7 +34,7 @@
 	<p>
 		<br/><br/>
 		Crée par <a href="https://twitter.com/VelGros">VelGros</a>.
-		Code source: <a href=".https://github.com/VelGros/secu.routiere-detournement">GitHub repo</a>
+		Code source: <a href="https://github.com/VelGros/secu.routiere-detournement">GitHub repo</a>
 	</p>
 	</body>
 </html>

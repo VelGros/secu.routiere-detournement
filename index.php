@@ -22,11 +22,21 @@
 				{	$_POST['text'] = "Votre texte ici \r\nPour mettre un *texte en jaune*, \r\nentourez le du symbole astérisque."; }
 			if(!IsSet($_POST['template']))
 				{	$_POST['template'] = "default";	}
+				
+			/* DEFAULT FONTSIZES
+			Change is made directly into the POST var.
+			To avoid overwriting user settings, defaults values are detected by values.
+			Yep, this means you cannot user large template default value (70) in mini ones and vice-versa.
+			
+			This could be easily fixed using some JS to just change default value on click on radio buttons
+			but i don't want to learn JS nor use some script i don't understand for that 
+			so feel free to enchance :)  */
+			
 			if(!IsSet($_POST['fontSize']))
-				{	$_POST['fontSize'] = 70;}
-			if($_POST['fontSize'] == 70 AND $_POST['template'] == "mini")
-				{	$_POST['fontSize'] = 20; }
-			if($_POST['fontSize'] == 20 AND $_POST['template'] != "mini")
+				{	$_POST['fontSize'] = 70;}// Default fontSize
+			if($_POST['fontSize'] == 70 AND $_POST['template'] == "mini")// If user select mini template but still has d efault fontsize.
+				{	$_POST['fontSize'] = 20; }//Default fontsize for mini template
+			if($_POST['fontSize'] == 20 AND $_POST['template'] != "mini")// If user select a large tempalte but still has  mini default fontSize
 				{	$_POST['fontSize'] = 70; }
 
 		?>
@@ -54,8 +64,8 @@
 		<a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet?text=Toi%20aussi%20tweet%20comme%20@RoutePlusSur%20avec&hashtags=securiteroutierelol&url=http://insecurite-routiere.lived.fr">
 		<img src="./src/twitter.png"/></a>
 		<br/>
-		Crée par <a href="https://twitter.com/VelGros">VelGros</a>.
-		Code source: <a href="https://github.com/VelGros/secu.routiere-detournement">GitHub repo</a>
+		Crée par <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/VelGros">VelGros</a>.
+		Code source: <a rel="noopener noreferrer" target="_blank" href="https://github.com/VelGros/secu.routiere-detournement">GitHub repo</a>
 	</p>
 	</body>
 </html>

@@ -9,10 +9,10 @@
 	<h1> Détournons la campagne de la sécurité routière </h1>
 	
 	<p class="main">
-		Le 24 septembre 2020, la sécurité routière a lancée une vaste campagne de sensibilisation. 
+		Le 24 septembre 2020, la sécurité routière a lancé une vaste campagne de sensibilisation. 
 		Malgré quelques bons messages, la plupart des affiches versent dans le #VictimBlaming et la déresponsabilisation des conducteurs de véhicules motorisés.
 		<br/><br/>
-		Pour souligner le ridicule de cette campagne tout en riant un bon coup, détournons la !	
+		Pour souligner le ridicule de cette campagne tout en riant un bon coup, détournons-la !	
 		#SécuritéRoutiéreLOL Tweet comme @RoutePlusSur
 	<p>
 	
@@ -47,7 +47,7 @@
 			<textarea id="text" name="text" rows="3" ><?php echo $_POST['text']; ?></textarea><br/>
 			<span id="fontSize">Taille du texte: <input type="number" name="fontSize" value="<?php echo($_POST['fontSize']); ?>" min="10" max="200" > </span>
 			
-			Modéle:
+			Modèle:
 			<input type="radio" id="template_default" name="template" value="default" <?php if($_POST['template'] == "default") {echo 'checked="true"';} ?> >
 			<label for="template_default">Parodie (défaut)</label>
 			<input type="radio" id="template_com" name="template" value="incompetent" <?php if($_POST['template'] == "incompetent") {echo 'checked="true"';} ?> >
@@ -64,7 +64,7 @@
 		<a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet?text=Toi%20aussi%20tweet%20comme%20@RoutePlusSur%20avec&hashtags=securiteroutierelol&url=http://insecurite-routiere.lived.fr">
 		<img src="./src/twitter.png"/></a>
 		<br/>
-		Crée par <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/VelGros">VelGros</a>.
+		Créé par <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/VelGros">VelGros</a>.
 		Code source: <a rel="noopener noreferrer" target="_blank" href="https://github.com/VelGros/secu.routiere-detournement">GitHub repo</a>
 	</p>
 	</body>

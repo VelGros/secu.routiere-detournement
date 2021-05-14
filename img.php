@@ -62,8 +62,10 @@
 				{	$color = ImageColorAllocate($img, 254, 224, 2);		} //Yellow
 			else
 				{	$color = ImageColorAllocate($img, 255, 255, 255);	} //White
-			$pos = imagettftext($img,$fontSize,0,$x,$y,$color,$font,str_replace(array("*","\r\n"),'',$chunk));
-			$x = $pos[2]+$fontSize/2.5;
+			
+			
+			$pos = imagettftext($img,$fontSize,0,$x,$y,$color,$font,str_replace(array("*","\r\n","\r"),'',$chunk));
+			$x = $pos[2];
 		}
 		
 		$x = $def_x;
